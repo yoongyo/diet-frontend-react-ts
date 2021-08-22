@@ -1,14 +1,16 @@
 import React from 'react';
 
 
-export const PeedDetail = () => {
+export const PeedDetail:React.FC = () => {
     return (
         <div>
             <div className="m-3">
+                {/* 질문태그 */}
                 <div className="bg-background inline-flex p-1">
                     <p>우리동네질문</p>
                 </div>
-            
+
+                {/* 질문자 프로필 */}
                 <div className="flex flex-row py-3 border-b">
                     <div>
 
@@ -29,14 +31,18 @@ export const PeedDetail = () => {
                 </div>
             </div>
 
-
+            
             <div className="border-t border-b p-2">
                 <button className="mr-4">궁금해요</button>
                 <button>답변하기</button>
             </div>
+            {/* 댓글 */}
             <div>
-                <div className="container mx-auto">
-                    <h1>아직 댓글이 없어요.</h1>
+                <div className="flex justify-center mt-11">
+                    <div className="text-center">
+                        <h1>아직 댓글이 없용.</h1>
+                        <h1>가장 먼저 댓글을 달아보세요</h1>
+                    </div>
                 </div>
             </div>
         </div>

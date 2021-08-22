@@ -3,16 +3,16 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import { Main } from '../pages/main';
 import { PeedDetail } from '../pages/peedDetail';
 import { PeedList } from '../pages/peedList';
+import { Profile } from '../pages/profile';
+import { Navigator, Screen } from 'karrotframe';
 
 
-
-export const MainRouter = () => {
+export const MainRouter:React.FC = () => {
     return (
-        <Router>
-            <Switch>
-                <Route path="/" exact component={PeedList}/>
-                <Route path="/detail" exact component={PeedDetail}/>
-            </Switch>
-        </Router>
+        <Navigator theme='Cupertino'>
+            <Screen path='/detail' component={PeedDetail}/>
+            <Screen path='/profile' component={Profile}/>
+            <Screen path='/' component={PeedList}/>
+        </Navigator>
     )
 }

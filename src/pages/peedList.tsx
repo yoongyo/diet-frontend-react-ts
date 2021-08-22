@@ -1,16 +1,15 @@
+import { ScreenHelmet } from "karrotframe";
 import React from "react";
 import { PeedListComponent } from "../component/peedListComponent";
 
 
-export const PeedList = () => {
+export const PeedList: React.FC = () => {
     return (
-        <div className="bg-background">
-            <PeedListComponent/>
-            <PeedListComponent/>
-            <PeedListComponent/>
-            <PeedListComponent/>
-            <PeedListComponent/>
-            <PeedListComponent/>
-        </div>
+        <>
+            <ScreenHelmet title="Peed List"/>
+            <div className="bg-background">
+                <PeedListComponent/>
+            </div>
+        </>
     )
 }
