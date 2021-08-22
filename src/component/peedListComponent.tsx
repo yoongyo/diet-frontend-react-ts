@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useNavigator } from "karrotframe/lib";
+import { useNavigator } from "karrotframe";
 
 
 export const PeedListComponent = () => {
